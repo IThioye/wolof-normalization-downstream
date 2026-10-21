@@ -1,0 +1,122 @@
+{
+  "threshold": 0.714768979401051,
+  "dev_oof": [
+    {
+      "strategy": "always_skip",
+      "feature_set": "none",
+      "rows": 1920,
+      "accuracy": 0.6817708333333333,
+      "macro_f1": 0.6937161999407557,
+      "number_normalized": 0,
+      "normalization_rate": 0.0,
+      "helped_routed_to_tnt": 0,
+      "harmed_routed_to_tnt": 0,
+      "helped_incorrectly_skipped": 96,
+      "harmed_successfully_skipped": 142,
+      "condition": "ALL"
+    },
+    {
+      "strategy": "always_normalize",
+      "feature_set": "none",
+      "rows": 1920,
+      "accuracy": 0.6578125,
+      "macro_f1": 0.6675922168398658,
+      "number_normalized": 1920,
+      "normalization_rate": 1.0,
+      "helped_routed_to_tnt": 96,
+      "harmed_routed_to_tnt": 142,
+      "helped_incorrectly_skipped": 0,
+      "harmed_successfully_skipped": 0,
+      "condition": "ALL"
+    },
+    {
+      "strategy": "dev_oof_router",
+      "feature_set": "deployable_all",
+      "rows": 1920,
+      "accuracy": 0.6911458333333333,
+      "macro_f1": 0.7019037652329786,
+      "number_normalized": 260,
+      "normalization_rate": 0.13541666666666666,
+      "helped_routed_to_tnt": 41,
+      "harmed_routed_to_tnt": 23,
+      "helped_incorrectly_skipped": 55,
+      "harmed_successfully_skipped": 119,
+      "condition": "ALL"
+    },
+    {
+      "strategy": "oracle_help_only",
+      "feature_set": "oracle",
+      "rows": 1920,
+      "accuracy": 0.7317708333333334,
+      "macro_f1": 0.739317988181007,
+      "number_normalized": 96,
+      "normalization_rate": 0.05,
+      "helped_routed_to_tnt": 96,
+      "harmed_routed_to_tnt": 0,
+      "helped_incorrectly_skipped": 0,
+      "harmed_successfully_skipped": 142,
+      "condition": "ALL"
+    }
+  ],
+  "test_exploratory": [
+    {
+      "strategy": "always_skip",
+      "feature_set": "none",
+      "rows": 3828,
+      "accuracy": 0.7108150470219435,
+      "macro_f1": 0.7183454745965486,
+      "number_normalized": 0,
+      "normalization_rate": 0.0,
+      "helped_routed_to_tnt": 0,
+      "harmed_routed_to_tnt": 0,
+      "helped_incorrectly_skipped": 219,
+      "harmed_successfully_skipped": 192,
+      "condition": "ALL"
+    },
+    {
+      "strategy": "always_normalize",
+      "feature_set": "none",
+      "rows": 3828,
+      "accuracy": 0.7178683385579937,
+      "macro_f1": 0.728538601727173,
+      "number_normalized": 3828,
+      "normalization_rate": 1.0,
+      "helped_routed_to_tnt": 219,
+      "harmed_routed_to_tnt": 192,
+      "helped_incorrectly_skipped": 0,
+      "harmed_successfully_skipped": 0,
+      "condition": "ALL"
+    },
+    {
+      "strategy": "dev_trained_router",
+      "feature_set": "deployable_all",
+      "rows": 3828,
+      "accuracy": 0.727533960292581,
+      "macro_f1": 0.7355007297469454,
+      "number_normalized": 478,
+      "normalization_rate": 0.12486938349007315,
+      "helped_routed_to_tnt": 87,
+      "harmed_routed_to_tnt": 23,
+      "helped_incorrectly_skipped": 132,
+      "harmed_successfully_skipped": 169,
+      "condition": "ALL"
+    },
+    {
+      "strategy": "oracle_help_only",
+      "feature_set": "oracle",
+      "rows": 3828,
+      "accuracy": 0.768025078369906,
+      "macro_f1": 0.7725715947055625,
+      "number_normalized": 219,
+      "normalization_rate": 0.05721003134796238,
+      "helped_routed_to_tnt": 219,
+      "harmed_routed_to_tnt": 0,
+      "helped_incorrectly_skipped": 0,
+      "harmed_successfully_skipped": 192,
+      "condition": "ALL"
+    }
+  ],
+  "test_is_not_pristine": true,
+  "reason": "The official test outcomes were already used in the preceding feasibility audit and architecture choice.",
+  "recommendation": "Validate the frozen router on a new human-noisy intent-labelled holdout before deployment claims."
+}

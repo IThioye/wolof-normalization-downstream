@@ -1,0 +1,9 @@
+Wolof normalization for downstream intent classification
+Copyright 2026 Ibrahima Thioye
+
+This product includes an adaptation of Laya Multilingual by ConvAI Innovations,
+released under the Apache License 2.0.
+
+The experiments use the InjongoIntent Wolof dataset from the Masakhane NLU
+project. The dataset is not redistributed in this repository.
+
